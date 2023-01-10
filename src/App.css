@@ -1,0 +1,70 @@
+.text-center {
+  text-align: center;
+}
+
+.plus-box {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  border: solid 1px #707070;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 24px;
+}
+
+.gallery-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.row {
+  flex-direction: row;
+  gap: 100px;
+  /* 이미지가 넘쳐나지 않게 */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: flex-start;
+  padding: 0 140px
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box {
+  width: 400px;
+  height: 250px;
+  min-width: 400px;
+  min-height: 200px;
+}
+
+/* 이미지크기조정 */
+.image-box img{
+  width: 400px;
+  height: 250px;
+}
+
+input {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .initial-box {
+    gap: 40px;
+  }
+
+  .row {
+    padding: 0 40px
+  }
+
+}
